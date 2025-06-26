@@ -67,6 +67,152 @@
     margin: 0 5px;
 }
 
+/* Вертикальная карусель в левом сайдбаре */
+.left-sidebar-carousel {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.left-sidebar-carousel .carousel-inner {
+    height: 100%;
+}
+
+.left-sidebar-carousel .carousel-item {
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.left-sidebar-carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Left sidebar carousel */
+/* Стили для сайдбара */
+.custom-sidebar {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.custom-sidebar:hover {
+    transform: translateY(-2px);
+}
+
+/* Стили для карусели в сайдбаре */
+/* Стили карусели идентичные основной */
+/* Вертикальная карусель */
+.vertical-carousel {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.vertical-carousel .carousel-inner {
+    height: 100%;
+}
+
+.vertical-carousel .carousel-item {
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.vertical-carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 2/3; /* Соотношение вертикального фото */
+}
+
+/* Индикаторы */
+.vertical-indicators {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 5;
+    margin: 0;
+}
+
+.vertical-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.vertical-indicators button.active {
+    background-color: #fff;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Кнопки навигации */
+.vertical-carousel .carousel-control-prev,
+.vertical-carousel .carousel-control-next {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(102, 126, 234, 0.7);
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.vertical-carousel .carousel-control-prev {
+    top: 10px;
+}
+
+.vertical-carousel .carousel-control-next {
+    bottom: 10px;
+}
+
+.vertical-carousel .carousel-control-prev:hover,
+.vertical-carousel .carousel-control-next:hover {
+    opacity: 1;
+    background-color: #667eea;
+}
+
+.up-icon {
+    transform: rotate(90deg);
+}
+
+.down-icon {
+    transform: rotate(90deg);
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .vertical-carousel {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vertical-carousel {
+        height: 300px;
+    }
+}
 /* Accordion customization */
 .custom-accordion-button {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
