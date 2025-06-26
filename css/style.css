@@ -1,0 +1,193 @@
+/* Navbar customization */
+.custom-navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.8rem !important;
+}
+
+.custom-navbar .nav-link:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+    transition: all 0.3s ease;
+}
+
+/* Card customizations */
+.custom-sidebar {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.custom-sidebar:hover {
+    transform: translateY(-2px);
+}
+
+.custom-main-content {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+.custom-form {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+/* Carousel customization */
+.custom-slide {
+    height: 300px;
+    border-radius: 10px;
+}
+
+.custom-slide-1 {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+}
+
+.custom-slide-2 {
+    background: linear-gradient(45deg, #4834d4, #686de0);
+}
+
+.custom-slide-3 {
+    background: linear-gradient(45deg, #00d2d3, #54a0ff);
+}
+
+.custom-slide-4 {
+    background: linear-gradient(45deg, #ff9ff3, #f368e0);
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Accordion customization */
+.custom-accordion-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+}
+
+.custom-accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #556cd6 0%, #6b4d9e 100%);
+    color: white;
+    box-shadow: none;
+}
+
+.custom-accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Button customization */
+.custom-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.custom-btn:hover {
+    background: linear-gradient(135deg, #556cd6 0%, #6b4d9e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+/* Form customization */
+.form-control:focus,
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    border-color: #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-control:hover,
+.form-select:hover {
+    border-color: #667eea;
+}
+
+/* Text customizations */
+.text-primary {
+    color: #667eea !important;
+}
+
+/* Sidebar links */
+.custom-sidebar a {
+    color: #667eea;
+    transition: all 0.3s ease;
+}
+
+.custom-sidebar a:hover {
+    color: #556cd6;
+    text-decoration: underline !important;
+}
+
+/* Body background */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-slide {
+        height: 200px;
+    }
+
+    .custom-slide h4 {
+        font-size: 1.2rem;
+    }
+
+    .custom-navbar .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Footer link hover effects */
+footer a:hover {
+    color: #667eea !important;
+    transition: color 0.3s ease;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>МойСайт - Главная</title>
+</head>
+<body>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">МойСайт</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-lg-3 col-md-4 mb-4">
+            <div class="card custom-sidebar">
+                <div class="card-body">
+                    <h5 class="card-title text-primary border-bottom pb-2">Боковое меню</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Категория 1</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Категория 2</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Категория 3</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Категория 4</a></li>
+                    </ul>
+
+                    <h5 class="card-title text-primary border-bottom pb-2 mt-4">Последние новости</h5>
+                    <div class="small text-muted">
+                        <p class="mb-3">Новость 1: Важное обновление системы</p>
+                        <p class="mb-3">Новость 2: Запуск нового продукта</p>
+                        <p class="mb-3">Новость 3: Партнерство с крупной компанией</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-6 col-md-8 mb-4">
+            <div class="card custom-main-content">
+                <div class="card-body">
+                    <h1 class="card-title mb-4" id="main">Добро пожаловать на наш сайт!</h1>
+                    <p class="card-text">Это главная страница нашего адаптивного веб-сайта. Здесь вы найдете всю необходимую информацию о наших услугах и продуктах. Мы стремимся предоставить вам лучший пользовательский опыт на любом устройстве.</p>
+
+                    <p class="card-text">Наша компания специализируется на создании современных веб-решений, которые отвечают всем требованиям пользователей. Мы используем передовые технологии и следуем лучшим практикам веб-разработки.</p>
+
+                    <!-- Bootstrap Carousel -->
+                    <div id="customCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex align-items-center justify-content-center custom-slide custom-slide-1">
+                                    <h4 class="text-white fw-bold">Слайд 1: Наши услуги</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center justify-content-center custom-slide custom-slide-2">
+                                    <h4 class="text-white fw-bold">Слайд 2: Портфолио</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center justify-content-center custom-slide custom-slide-3">
+                                    <h4 class="text-white fw-bold">Слайд 3: Клиенты</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center justify-content-center custom-slide custom-slide-4">
+                                    <h4 class="text-white fw-bold">Слайд 4: Контакты</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <!-- Bootstrap Accordion -->
+                    <div class="accordion" id="servicesAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Веб-разработка
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body">
+                                    Мы создаем современные, адаптивные веб-сайты с использованием последних технологий. Наши проекты отличаются высоким качеством кода и отличной производительностью.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Мобильные приложения
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body">
+                                    Разработка нативных и кроссплатформенных мобильных приложений для iOS и Android. Мы создаем удобные и функциональные приложения для любых задач.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Дизайн интерфейсов
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body">
+                                    Создание интуитивно понятных и привлекательных пользовательских интерфейсов. Мы учитываем все аспекты UX/UI дизайна для создания лучшего пользовательского опыта.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-lg-3 col-md-12 mb-4">
+            <div class="card custom-sidebar">
+                <div class="card-body">
+                    <h5 class="card-title text-primary border-bottom pb-2">Дополнительная информация</h5>
+                    <p class="card-text small text-muted">Здесь размещается дополнительная информация, реклама или другие полезные материалы.</p>
+
+                    <h5 class="card-title text-primary border-bottom pb-2 mt-4">Наши преимущества</h5>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">✓ Высокое качество</li>
+                        <li class="mb-2">✓ Быстрая доставка</li>
+                        <li class="mb-2">✓ Поддержка 24/7</li>
+                        <li class="mb-2">✓ Доступные цены</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row" id="contact">
+        <div class="col-12">
+            <div class="card custom-form">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Свяжитесь с нами</h2>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Имя *</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="service" class="form-label">Интересующая услуга</label>
+                            <select class="form-select" id="service">
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="web">Веб-разработка</option>
+                                <option value="mobile">Мобильные приложения</option>
+                                <option value="design">Дизайн</option>
+                                <option value="consulting">Консультации</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Сообщение *</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Расскажите о вашем проекте..." required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn custom-btn">Отправить сообщение</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5 class="text-primary">О компании</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">История</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Команда</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Карьера</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5 class="text-primary">Услуги</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Веб-разработка</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Мобильные приложения</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Дизайн</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5 class="text-primary">Контакты</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">+1 (415) 555-1234</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">iT@SanFrancisco.com</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">San Francisco, CA, Folsom St, 1234</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 МойСайт. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
